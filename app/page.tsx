@@ -212,7 +212,7 @@ export default function Home() {
         {/* Grid bg */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(6,182,212,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(6,182,212,0.03)_1px,transparent_1px)] bg-[size:60px_60px]" />
         {/* Glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-500/5 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen h-[600px] bg-cyan-500/5 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10 text-center max-w-3xl">
           <p className="font-mono text-cyan-400 text-xs tracking-[0.3em] mb-4">
@@ -596,12 +596,12 @@ export default function Home() {
       <footer className="border-t border-slate-800 py-6 px-4">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="font-mono text-xs text-slate-600">
-            &copy; 2025 Md. Azizul Mollik. Built with Next.js &amp; Tailwind CSS.
+            &copy; {new Date().getFullYear()} Md. Azizul Mollik. All rights reserved.
           </p>
-          <div className="flex items-center gap-4">
+          {/* <div className="flex items-center gap-4">
             <span className="text-[10px] font-mono text-slate-700">v1.0.0</span>
             <span className="text-[10px] font-mono text-cyan-800">ONLINE</span>
-          </div>
+          </div> */}
         </div>
       </footer>
     </div>
